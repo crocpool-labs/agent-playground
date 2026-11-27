@@ -1,0 +1,3 @@
+# 打开或重跑 notebooks/ 需要；与 requirements.txt 装在同一个 .venv 里
+ipykernel
+nbclient

@@ -1,0 +1,23 @@
+# SFT 是训练目标，QLoRA 是节省内存的参数更新方式。
+# 相对路径由 CLI 在项目根目录执行时解析。
+model: models/qwen3-0.6b-4bit
+data: data
+train: true
+fine_tune_type: lora
+num_layers: 8
+batch_size: 1
+iters: 100
+learning_rate: 0.0001
+max_seq_length: 512
+grad_checkpoint: true
+mask_prompt: true
+seed: 42
+steps_per_report: 10
+steps_per_eval: 50
+val_batches: 4
+save_every: 100
+adapter_path: adapters/sft
+lora_parameters:
+  rank: 8
+  dropout: 0.0
+  scale: 16.0

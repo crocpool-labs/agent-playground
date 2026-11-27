@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "answer": "结果是 42。",
+  "trace": [
+    {
+      "step": 1,
+      "raw": "{\"tool\":\"calculator\",\"args\":{\"expression\":\"((19+23)*2)}}",
+      "error": "Unterminated string starting at: line 1 column 43 (char 42)"
+    },
+    {
+      "step": 2,
+      "raw": "{\"final\":\"结果是 42。\"}"
+    }
+  ],
+  "model": "sft",
+  "question": "请计算 (19+23)*2",
+  "framework": "langgraph",
+  "metrics": {
+    "generation_tokens": 11,
+    "generation_tps": 208.00045401634353,
+    "peak_mlx_gb": 0.740184952
+  },
+  "verification": {
+    "expected_answer": "84",
+    "answer_correct": false,
+    "successful_tool_calls": 0,
+    "note": "ok 仅表示生成了合法 final；此案例没有成功执行工具，最终答案错误。"
+  }
+}

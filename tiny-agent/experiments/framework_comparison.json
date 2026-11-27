@@ -1,0 +1,84 @@
+{
+  "n_cases": 32,
+  "identical_traces": {
+    "qwen3-sft": {
+      "identical": 32,
+      "cases_reaching_branch": {
+        "error": 0,
+        "tool": 32,
+        "hit_step_limit": 0
+      }
+    },
+    "qwen3-base": {
+      "identical": 32,
+      "cases_reaching_branch": {
+        "error": 3,
+        "tool": 2,
+        "hit_step_limit": 0
+      }
+    },
+    "qwen2.5-base": {
+      "identical": 32,
+      "cases_reaching_branch": {
+        "error": 4,
+        "tool": 25,
+        "hit_step_limit": 2
+      }
+    }
+  },
+  "orchestration_ms_per_two_step_run": {
+    "plain": 0.011,
+    "langgraph": 1.157
+  },
+  "import_seconds": {
+    "tiny_agent.agent": 0.008,
+    "langgraph.graph": 0.292
+  },
+  "langgraph_dependency_closure": {
+    "count": 38,
+    "packages": [
+      "annotated-types",
+      "anyio",
+      "certifi",
+      "charset-normalizer",
+      "distro",
+      "h11",
+      "httpcore",
+      "httpcore2",
+      "httpx",
+      "httpx2",
+      "idna",
+      "jsonpatch",
+      "jsonpointer",
+      "langchain-core",
+      "langchain-protocol",
+      "langgraph",
+      "langgraph-checkpoint",
+      "langgraph-prebuilt",
+      "langgraph-sdk",
+      "langsmith",
+      "orjson",
+      "ormsgpack",
+      "packaging",
+      "pydantic",
+      "pydantic-core",
+      "pyyaml",
+      "requests",
+      "requests-toolbelt",
+      "sniffio",
+      "tenacity",
+      "truststore",
+      "typing-extensions",
+      "typing-inspection",
+      "urllib3",
+      "uuid-utils",
+      "websockets",
+      "xxhash",
+      "zstandard"
+    ]
+  },
+  "code_lines": {
+    "agent.py": 38,
+    "graph_agent.py": 87
+  }
+}

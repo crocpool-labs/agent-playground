@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "answer": "结果是 437。",
+  "trace": [
+    {
+      "step": 1,
+      "raw": "{\"tool\":\"calculator\",\"args\":{\"expression\":\"19*23\"}}",
+      "tool": "calculator",
+      "args": {
+        "expression": "19*23"
+      },
+      "result": "437"
+    },
+    {
+      "step": 2,
+      "raw": "{\"final\":\"结果是 437。\"}"
+    }
+  ],
+  "model": "sft",
+  "question": "请计算 19*23",
+  "framework": "plain",
+  "engine": "mlx",
+  "metrics": {
+    "engine": "mlx",
+    "generation_tokens": 12,
+    "generation_tps": 213.06140628407493,
+    "peak_mlx_gb": 0.703849788,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "seed": 42
+  }
+}
